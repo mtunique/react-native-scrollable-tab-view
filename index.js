@@ -206,7 +206,7 @@ const ScrollableTabView = React.createClass({
         shouldUpdated={this._shouldRenderSceneKey(idx, this.state.currentPage)}
         style={{width: this.state.containerWidth, }}
       >
-        {this._keyExists(this.state.sceneKeys, key) ? child : <View tabLabel={child.props.tabLabel}/>}
+        {child}
       </SceneComponent>;
     });
   },
